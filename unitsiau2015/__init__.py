@@ -129,10 +129,22 @@ TODO: eventually consider adopting this as a "base" unit
 """
 _physical_types_to_solar = {'length': 'solRad',
                             'mass': 'solMass',
+                            'temperature': 'solTeff',
+                            'power': 'solLum',
                             'time': 'd',
                             'speed': 'solRad/d',
                             'angle': 'rad',
                             'angular speed': 'rad/d',
+                            'dimensionless': ''}
+
+_physical_types_to_si = {'length': 'm',
+                            'mass': 'kg',
+                            'temperature': 'K',
+                            'power': 'W',
+                            'time': 's',
+                            'speed': 'm/s',
+                            'angle': 'rad',
+                            'angular speed': 'rad/s',
                             'dimensionless': ''}
 
 def _get_physical_type(object):
